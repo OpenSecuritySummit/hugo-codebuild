@@ -11,7 +11,7 @@ FROM ubuntu:16.04
 LABEL authors="Mohammed A. Imran <imran.mohammed@owasp.org>, Felipe Zipitria <felipe.zipitria@owasp.org>"
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV HUGO_VERSION="0.49"
+ENV HUGO_VERSION="0.54.0"
 ENV SRC_DIR="/opt/oss2019"
 
 RUN apt-get update \
