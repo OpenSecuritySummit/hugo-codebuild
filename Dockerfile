@@ -2,16 +2,16 @@
 
 # Run the following commands to setup this docker
 # docker pull ubuntu:16.04
-# git clone https://github.com/OpenSecuritySummit/oss2018.git 
-# cd oss2018 && git clone https://github.com/devcows/hugo-universal-theme.git themes/oss-owasp
-# docker build -t oss2018 . 
-# docker run -it -p 1313:1313 -v $(pwd):/opt/oss2018 oss2018:latest 
+# git clone https://github.com/OpenSecuritySummit/oss2019.git 
+# cd oss2019 && git clone https://github.com/devcows/hugo-universal-theme.git themes/oss-owasp
+# docker build -t oss2019 . 
+# docker run -it -p 1313:1313 -v $(pwd):/opt/oss2019 oss2019:latest 
 
 FROM ubuntu:16.04
 LABEL authors="Mohammed A. Imran <imran.mohammed@owasp.org>, Felipe Zipitria <felipe.zipitria@owasp.org>"
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV HUGO_VERSION="0.54.0"
+ENV HUGO_VERSION="0.55.5"
 ENV SRC_DIR="/opt/oss2019"
 
 RUN apt-get update \
